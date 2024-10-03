@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITBLEND - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="brand">FITBLEND</div>
+            <img src="hanger.png" alt="Cloth Hanger" class="nav-icon">
+        </nav>
+    </header>
+
+    <main>
+        <div id="random-outfits" class="random-outfits">
+            <div id="shirt-display" class="outfit-image"></div>
+            <div id="pant-display" class="outfit-image"></div>
+            <div id="shoe-display" class="outfit-image"></div>
+        </div>
+        
+        
+
+        <div class="outfit-container">
+            <div id="shirt-section" class="outfit-item"></div>
+            <div id="pants-section" class="outfit-item"></div>
+            <div id="shoes-section" class="outfit-item"></div>
+        </div>
+        <div class="button-container">
+            <button id="add-outfit-btn">Add Outfit</button>
+            <button id="view-wardrobe-btn">View My Wardrobe</button>
+            <button id="set-reminder-btn">Set Reminder</button>
+            <button id="saved-for-later-btn">Saved for Later</button>
+        </div>
+        </div>
+        <!-- Add Outfit Modal -->
+        <div id="add-outfit-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>Add Outfit</h3>
+                <div class="outfit-type">
+                    <input type="radio" name="outfit-type" value="shirt" id="shirt" checked> Shirt
+                    <input type="radio" name="outfit-type" value="pant" id="pant"> Pant
+                    <input type="radio" name="outfit-type" value="shoes" id="shoes"> Shoes
+                </div>
+                <input type="file" id="outfit-file" accept="image/*">
+                <button id="save-outfit-btn">Save Outfit</button>
+            </div>
+        </div>
+
+        <!-- View Wardrobe Modal -->
+        <div id="wardrobe-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>My Wardrobe</h3>
+                <div class="wardrobe-section">
+                    <h4>Shirts</h4>
+                    <div id="wardrobe-shirts" class="wardrobe-gallery"></div>
+                </div>
+                <div class="wardrobe-section">
+                    <h4>Pants</h4>
+                    <div id="wardrobe-pants" class="wardrobe-gallery"></div>
+                </div>
+                <div class="wardrobe-section">
+                    <h4>Shoes</h4>
+                    <div id="wardrobe-shoes" class="wardrobe-gallery"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reminder Modal -->
+        <div id="reminder-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>Set Reminder for Outfit</h3>
+                <div class="reminder-section">
+                    <h4>Title</h4>
+                    <input type="text" id="reminder-title" placeholder="Add a title for your outfit">
+                </div>
+                <div class="reminder-section">
+                    <h4>Select Shirt</h4>
+                    <div id="reminder-shirts" class="wardrobe-gallery"></div>
+                </div>
+                <div class="reminder-section">
+                    <h4>Select Pants</h4>
+                    <div id="reminder-pants" class="wardrobe-gallery"></div>
+                </div>
+                <div class="reminder-section">
+                    <h4>Select Shoes</h4>
+                    <div id="reminder-shoes" class="wardrobe-gallery"></div>
+                </div>
+                <div class="reminder-section">
+                    <h4>Select Date</h4>
+                    <input type="date" id="reminder-date">
+                </div>
+                <button id="save-reminder-btn">Save Reminder</button>
+            </div>
+        </div>
+
+        <!-- Saved for Later Modal -->
+        <div id="saved-reminders-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>Outfits Saved for Later</h3>
+                <div id="saved-reminders" class="wardrobe-gallery"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

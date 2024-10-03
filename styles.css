@@ -1,0 +1,231 @@
+/* General Body and Font Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    padding: 10px 20px;
+}
+
+.brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-icon {
+    width: 40px;
+    height: auto;
+}
+
+/* Button Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: yellow;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+/* Random Outfit Section Styling */
+/* Random Outfit Section Styling */
+.outfit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    object-fit: cover;
+}
+
+.outfit-item {
+    border: 2px solid #ccc;
+    position: relative;
+    padding: 10px;
+    width: 200px;
+    height: 170px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(22, 20, 20, 0.205);
+    overflow: hidden;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    object-fit: cover;
+}
+.outfit-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+/* Shoe Section Styling - Half Size */
+#shoes-section  {
+    width: 200px;  /* Half the width of other items */
+    height: 80px;
+}
+
+
+
+/* Modal Styles */
+/* Modal Styles */
+.modal {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 75px;
+    left: 300px;
+    border-top: 10px black ;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    width: 700px;
+    
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-btn {
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.reminder-section {
+    margin-top: 15px;
+}
+
+.wardrobe-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wardrobe-gallery img {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#reminder-date {
+    margin-top: 15px;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: none;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.gallery img {
+    max-width: 100%;
+    max-height: 150px;
+    margin: 10px 0;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Wardrobe Modal Styling */
+.wardrobe-section {
+    margin-top: 20px;
+}
+
+.wardrobe-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.wardrobe-gallery img {
+    
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Add this to your styles.css */
+.random-outfits { /*waste*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    object-fit: cover;
+    background-color: red;
+}
+
+
+
+.outfit-image.fade {
+    opacity: 0;
+}
+.outfit-desc{
+    display: flex;
+    flex-direction: column;
+    align-items :start
+}
+
+/* Media Queries for Smaller Devices */
+@media (max-width: 768px) {
+    .outfit-container {
+        flex-direction: column;
+    }
+
+    .outfit-item {
+        margin-bottom: 20px;
+        width: 80%;
+        height: 150px;
+    }
+
+    .gallery {
+        width: 90%;
+    }
+}
